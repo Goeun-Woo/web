@@ -1,0 +1,84 @@
+
+
+.twinkling {
+  background: transparent
+    url(http://www.script-tutorials.com/demos/360/images/twinkling.png) repeat
+    top center;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+
+  -moz-animation: move-twink-back 200s linear infinite;
+  -ms-animation: move-twink-back 200s linear infinite;
+  -o-animation: move-twink-back 200s linear infinite;
+  -webkit-animation: move-twink-back 200s linear infinite;
+  animation: move-twink-back 200s linear infinite;
+}
+.About {
+  background: url(http://www.script-tutorials.com/demos/360/images/stars.png)
+    repeat top center;
+  z-index: 0;
+  background-color: black;
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.colorfulTitle {
+  width: 100vw;
+  transform: translate(-50%, -50%);
+  position: relative;
+  top: 10%;
+  left: 50%;
+  margin-right: -50%;
+  animation-name: top-down;
+  animation-duration: 4s;
+  -webkit-animation-name: top-down;
+  -webkit-animation-duration: 1.5s;
+}
+
+.colorfulTitle h1 {
+  color: #000;
+  font-size: 5rem;
+  text-align: center;
+  margin-top: 10%;
+  display: inline-block;
+  padding: 10px 3px 40px; /* bottom padding should be higher to make up for pseudo border height */
+  background: rgba(255, 253, 160, 1);
+  background: -webkit-linear-gradient(
+      left,
+      #00ffff 0%,
+      #97fba0 25%,
+      #97b1fb 50%,
+      #00ffff 100%
+    )
+    repeat;
+  -webkit-background-clip: text;
+  -ms-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -ms-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  animation-name: masked-animation;
+  -webkit-animation-name: masked-animation;
+  animation-duration: 50s;
+  -webkit-animation-duration: 50s;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  -webkit-animation-timing-function: linear;
+}
+div p:first-of-type {
+  font-size: 1.3rem;
+  color: rgb(202, 193, 193);
+  padding: 10px 0px 20px 0px;
+}
+div p:nth-of-type(2) {
+  font-size: 1rem;
+  color: rgb(175, 171, 171);
+}
+.Intro {
+  font-family: "Nanum Gothic", sans-serif;
+  padding: 0px 0px 50px 0px;
+}

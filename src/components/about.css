@@ -1,0 +1,248 @@
+@keyframes move-twink-back {
+  from {
+    background-position: 0 0;
+  }
+
+  to {
+    background-position: -10000px 5000px;
+  }
+}
+
+@-webkit-keyframes move-twink-back {
+  from {
+    background-position: 0 0;
+  }
+
+  to {
+    background-position: -10000px 5000px;
+  }
+}
+
+@-moz-keyframes move-twink-back {
+  from {
+    background-position: 0 0;
+  }
+
+  to {
+    background-position: -10000px 5000px;
+  }
+}
+
+@-ms-keyframes move-twink-back {
+  from {
+    background-position: 0 0;
+  }
+
+  to {
+    background-position: -10000px 5000px;
+  }
+}
+
+@keyframes masked-animation {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: -8000px -3000px;
+  }
+}
+
+@-webkit-keyframes masked-animation {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: -8000px -3000px;
+  }
+}
+
+@keyframes top-down {
+  0% {
+    top: 0;
+    opacity: 0;
+  }
+
+  100% {
+    top: 10%;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes top-down {
+  0% {
+    top: 0;
+    opacity: 0;
+  }
+
+  100% {
+    top: 10%;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translatey(-50px);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translatey(0px);
+  }
+}
+
+@-moz-keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -moz-transform: translatey(-50px);
+  }
+
+  to {
+    opacity: 1;
+    -moz-transform: translatey(0px);
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translatey(-50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translatey(0px);
+  }
+}
+
+#ABOUT {
+  background: #000 url(../img/about_stars.png) repeat top center;
+  z-index: 0;
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.twinkling {
+  background: transparent url(../img/about_twinkling.png) repeat top center;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+  -moz-animation: move-twink-back 200s linear infinite;
+  -ms-animation: move-twink-back 200s linear infinite;
+  -o-animation: move-twink-back 200s linear infinite;
+  -webkit-animation: move-twink-back 200s linear infinite;
+  animation: move-twink-back 200s linear infinite;
+}
+
+.colorfulTitle {
+  background: url(../img/about_stars.png);
+  animation-name: top-down;
+  animation-duration: 4s;
+  -webkit-animation-name: top-down;
+  -webkit-animation-duration: 1.5s;
+  padding-top: 10%;
+}
+
+.colorfulTitle h1 {
+  color: #000;
+  font-size: 5.5rem;
+  text-align: center;
+  padding: 0 3px 40px;
+  /* bottom padding should be higher to make up for pseudo border height */
+  background: -webkit-linear-gradient(
+      left,
+      #0ff 0%,
+      #97fba0 25%,
+      #97b1fb 50%,
+      #0ff 100%
+    )
+    repeat;
+  -webkit-background-clip: text;
+  -ms-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -ms-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  animation-name: masked-animation;
+  -webkit-animation-name: masked-animation;
+  animation-duration: 50s;
+  -webkit-animation-duration: 50s;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  -webkit-animation-timing-function: linear;
+  opacity: 0;
+}
+.go .colorfulTitle h1 {
+  -webkit-animation-name: fadeInDown;
+  -moz-animation-name: fadeInDown;
+  -o-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 2s;
+  -moz-animation-duration: 2s;
+  -o-animation-duration: 2s;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  -webkit-animation-iteration-count: 1;
+  opacity: 1;
+}
+.Intro p:first-of-type {
+  font-size: 1.5rem;
+  color: #cac1c1;
+  padding: 3%;
+  text-align: justify center;
+}
+.Intro p:nth-of-type(2) {
+  font-size: 1.2rem;
+  color: #afabab;
+  padding: 3%;
+  text-align: justify center;
+}
+.Intro {
+  font-family: "Nanum Gothic", sans-serif;
+  padding: 30px 0 50px;
+}
+/* Responsive Device Resolution : PC */
+@media only screen and (max-width: 992px) {
+  .Intro p:first-of-type {
+    font-size: 1.3rem;
+  }
+  .Intro p:nth-of-type(2) {
+    font-size: 1rem;
+  }
+}
+@media only screen and (max-width: 536px) {
+  .colorfulTitle h1 {
+    font-size: 3.5rem;
+    margin-top: 20%;
+  }
+  .Intro p:first-of-type {
+    font-size: 1rem;
+    padding: 5%;
+    text-align: justify;
+  }
+  .Intro p:nth-of-type(2) {
+    font-size: 1rem;
+    padding: 5%;
+    text-align: justify;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .Intro p:first-of-type {
+    font-size: 1rem;
+    text-align: justify;
+  }
+  .Intro p:nth-of-type(2) {
+    font-size: 1rem;
+    text-align: justify;
+  }
+}
