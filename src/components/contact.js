@@ -59,5 +59,5 @@ class Contact extends Component {
     );
   }
 }
-gi;
+
 export default Contact;
