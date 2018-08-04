@@ -9,11 +9,12 @@ class Home extends Component {
         <div id="HOME" className="NavTarget">
           <div className="bg">
             <p>
-              HELLO-<br />
-              THIS IS GONNI-<br />
               <br />
-              THE DREAM CATCHER.
+              THIS IS GO-EUN'S
+              <br />
+              THE DREAM PLACE.
             </p>
+
             <p>
               WOO GO EUN<br />
               <br />
