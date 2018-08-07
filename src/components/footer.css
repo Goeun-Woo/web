@@ -6,7 +6,6 @@
 }
 .copyRights {
   display: inline-block;
-  float: left;
   padding-left: 5%;
   margin-top: 1%;
   font-size: 1.2rem;
@@ -47,7 +46,7 @@
 @media only screen and (max-width: 425px) {
   .copyRights {
     margin-top: 5%;
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
   .imageLinks img {
     margin-top: 20%;

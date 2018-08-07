@@ -24,8 +24,8 @@ class Contact extends Component {
       <section id="CONTACT" className="NavTarget">
         <h1>CONTACT</h1>
         <div className="memo">
-          <p>Get in Touch with Me !</p>
-          <p>feel free to drop me a line.</p>
+          <p>언제든지 연락주세요 !</p>
+          <p>빠른 시일 내에 답변 드리겠습니다.</p>
           <form
             id="gform"
             method="POST"

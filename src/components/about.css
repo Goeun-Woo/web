@@ -203,12 +203,18 @@
   width: 80%;
   padding: 10% 10%;
 }
-@media only screen and (max-width: 425px) {
+/* Responsive Device Resolution : tablet */
+@media only screen and (max-width: 768px) {
   #ABOUT h1 {
-    font-size: 4rem;
-    margin-top: 30%;
+    font-size: 5rem;
   }
   .intro {
     font-size: 1.2rem;
+  }
+}
+/* Responsive Device Resolution : Mobile */
+@media only screen and (max-width: 425px) {
+  #ABOUT h1 {
+    font-size: 4rem;
   }
 }

@@ -14,10 +14,9 @@ img {
 }
 
 .bg {
-  background: url(../bg.jpg) no-repeat;
-  background-position: center;
-  height: 100vh;
+  background: url(../bg.jpg) center no-repeat;
   width: 100vw;
+  height: 100vh;
   filter: grayscale(0%) brightness(70%);
   -webkit-filter: grayscale(0%) brightness(70%);
   -ms-filter: grayscale(50%) brightness(50%);
@@ -27,8 +26,8 @@ img {
 }
 
 .bg:hover {
-  height: 100vh;
   width: 102vw;
+  height: 102vh;
   transition: all 0.6s ease;
   -webkit-transition: all 0.6s ease;
   -ms-transition: all 0.6s ease;
@@ -104,20 +103,32 @@ img {
   }
   .bg p:first-of-type {
     font-size: 5rem;
-    padding: 5% 0 0 0;
+    top: 20%;
   }
 
   .bg p:nth-of-type(2) {
     font-size: 5rem;
-    padding: 0;
     top: 20%;
   }
 
   .bg:hover p:nth-of-type(2) {
     font-size: 5rem;
-    padding: 0;
-    left: 10%;
     top: 20%;
+  }
+}
+
+/*Responsive Device Resolution : tablet */
+@media only screen and (max-width: 768px) {
+  .bg p:first-of-type {
+    font-size: 4.5rem;
+  }
+
+  .bg p:nth-of-type(2) {
+    font-size: 4.5rem;
+  }
+
+  .bg:hover p:nth-of-type(2) {
+    font-size: 4.5rem;
   }
 }
 
@@ -125,22 +136,13 @@ img {
 @media only screen and (max-width: 425px) {
   .bg p:first-of-type {
     font-size: 3.3rem;
-    margin-top: 15%;
-    margin-left: 0;
-    left: 5%;
   }
 
   .bg p:nth-of-type(2) {
     font-size: 3.3rem;
-    margin-top: 15%;
-    margin-left: 0;
-    left: 5%;
   }
 
   .bg:hover p:nth-of-type(2) {
     font-size: 3.3rem;
-    margin-top: 15%;
-    margin-left: 0;
-    left: 5%;
   }
 }
