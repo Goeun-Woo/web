@@ -12,7 +12,7 @@ class NavBar extends Component {
           <a href="#ABOUT">ABOUT</a>
           <a href="#SKILLS">SKILLS</a>
           <a href="#CONTACT">CONTACT</a>
-          <a href="#BLOG">BLOG</a>
+          <a href="https://goeun-woo.github.io/">BLOG</a>
         </ul>
       </nav>
     );

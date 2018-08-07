@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import "./form.css";
 
 const Form = ({ name, email, message, onChange }) => {
   return (

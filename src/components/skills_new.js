@@ -16,7 +16,7 @@ const LogoList = [
 
 const NewSkills = () => {
   return (
-    <div id="SKILLS" className="NavTarget">
+    <section id="SKILLS" className="NavTarget">
       <h1>SKILLS</h1>
       <div className="detail">
         {LogoList.map((LOGO, i) => {
@@ -37,7 +37,7 @@ const NewSkills = () => {
           );
         })}
       </div>
-    </div>
+    </section>
   );
 };
 

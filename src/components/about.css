@@ -195,54 +195,20 @@
   -webkit-animation-iteration-count: 1;
   opacity: 1;
 }
-.Intro p:first-of-type {
+.intro {
+  position: absolute;
+  font-family: "Nanum Gothic", serif;
   font-size: 1.5rem;
   color: #cac1c1;
-  padding: 3%;
-  text-align: justify center;
+  width: 80%;
+  padding: 10% 10%;
 }
-.Intro p:nth-of-type(2) {
-  font-size: 1.2rem;
-  color: #afabab;
-  padding: 3%;
-  text-align: justify center;
-}
-.Intro {
-  font-family: "Nanum Gothic", sans-serif;
-  padding: 30px 0 50px;
-}
-/* Responsive Device Resolution : PC */
-@media only screen and (max-width: 992px) {
-  .Intro p:first-of-type {
-    font-size: 1.3rem;
+@media only screen and (max-width: 425px) {
+  #ABOUT h1 {
+    font-size: 4rem;
+    margin-top: 30%;
   }
-  .Intro p:nth-of-type(2) {
-    font-size: 1rem;
-  }
-}
-@media only screen and (max-width: 536px) {
-  .colorfulTitle h1 {
-    font-size: 3.5rem;
-    margin-top: 20%;
-  }
-  .Intro p:first-of-type {
-    font-size: 1rem;
-    padding: 5%;
-    text-align: justify;
-  }
-  .Intro p:nth-of-type(2) {
-    font-size: 1rem;
-    padding: 5%;
-    text-align: justify;
-  }
-}
-@media only screen and (max-width: 320px) {
-  .Intro p:first-of-type {
-    font-size: 1rem;
-    text-align: justify;
-  }
-  .Intro p:nth-of-type(2) {
-    font-size: 1rem;
-    text-align: justify;
+  .intro {
+    font-size: 1.2rem;
   }
 }

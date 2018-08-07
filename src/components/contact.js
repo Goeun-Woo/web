@@ -21,7 +21,7 @@ class Contact extends Component {
     const { name, email, message } = this.state;
     const { handleChange } = this;
     return (
-      <div id="CONTACT" className="NavTarget">
+      <section id="CONTACT" className="NavTarget">
         <h1>CONTACT</h1>
         <div className="memo">
           <p>Get in Touch with Me !</p>
@@ -55,7 +55,7 @@ class Contact extends Component {
             <button className="create-button">SEND A MESSAGE</button>
           </form>
         </div>
-      </div>
+      </section>
     );
   }
 }

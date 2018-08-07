@@ -122,7 +122,7 @@ img {
 }
 
 /* Responsive Device Resolution : Mobile */
-@media only screen and (max-width: 536px) {
+@media only screen and (max-width: 425px) {
   .bg p:first-of-type {
     font-size: 3.3rem;
     margin-top: 15%;

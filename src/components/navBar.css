@@ -63,6 +63,7 @@ nav.shrink {
   height: 53px;
 }
 
+/* Responsive Device Resolution : PC */
 @media only screen and (max-width: 992px) {
   nav {
     position: fixed;
@@ -71,7 +72,7 @@ nav.shrink {
 }
 
 /* Responsive Device Resolution : Mobile */
-@media only screen and (max-width: 536px) {
+@media only screen and (max-width: 425px) {
   nav {
     font-size: 1.3rem;
   }

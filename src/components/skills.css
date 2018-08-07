@@ -91,7 +91,7 @@
   }
 }
 /* Responsive Styling : Mobile */
-@media only screen and (max-width: 536px) {
+@media only screen and (max-width: 425px) {
   #SKILLS h1 {
     font-size: 3.5rem;
     margin-top: 30%;
@@ -110,23 +110,5 @@
     justify-content: space-around;
     margin-top: 0.5%;
     margin-left: 0.8%;
-  }
-}
-/* Responsive Styling : Mobile -Xtra Small */
-@media only screen and (max-width: 320px) {
-  .detail {
-    padding: 5%;
-  }
-  .img img {
-    width: 50px;
-    height: 50px;
-    padding: 5%;
-  }
-  .img .text_overlay {
-    width: 54px;
-    height: 54px;
-    justify-content: space-around;
-    margin-top: 0.5%;
-    margin-left: 0.7%;
   }
 }
