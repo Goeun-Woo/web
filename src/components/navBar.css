@@ -21,22 +21,13 @@ nav ul {
   padding-right: 5%;
 }
 
-nav ul {
-  list-style: rgba(0, 0, 0, 0);
-}
-
 nav ul a {
-  list-style: 80px;
   color: #fff;
   padding: 23px 20px;
   padding-bottom: 5px;
   text-decoration: none;
   transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
-}
-
-nav ul a {
-  background-color: none;
 }
 
 nav ul a:hover,
@@ -52,12 +43,12 @@ nav ul a.active {
   transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
   color: #90ee90;
-  text-shadow: 0 0 px rgba(143, 243, 201, 1);
+  text-shadow: 0px 0px rgba(143, 243, 201, 1);
 }
 
 nav.shrink {
   width: 100vw;
-  transition: all 0 ease;
+  transition: all 0.1 ease;
   background: rgba(0, 0, 0, 0.8);
   font-size: 1.2rem;
   height: 53px;
