@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Slabo+27px");
-
+@import url("https://fonts.googleapis.com/css?family=BenchNine:300|Nanum+Gothic");
 #root {
   background-image: url("..src/img/bg.jpg");
   background-size: cover;
@@ -9,5 +8,5 @@ body,
 html {
   margin: 0;
   padding: 0;
-  font-family: "Tulpen One", cursive, sans-serif;
+  font-family: "BenchNine", "Nanum Gothic", sans-serif;
 }
