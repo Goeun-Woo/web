@@ -14,7 +14,7 @@ img {
 }
 
 .bg {
-  background: url(../bg.jpg) center no-repeat;
+  background: url(../bg.jpg) center no-repeat fixed;
   width: 100vw;
   height: 100vh;
   filter: grayscale(0%) brightness(70%);
