@@ -2,9 +2,8 @@ import React, { Component } from "react";
 import "./home.css";
 import bg from "../bg.jpg";
 
-class Home extends Component {
-  render() {
-    return (
+const Home = () => {
+      return (
       <section id="HOME" className="NavTarget">
         <div className="bg">
           <p>
@@ -23,6 +22,6 @@ class Home extends Component {
       </section>
     );
   }
-}
+
 
 export default Home;

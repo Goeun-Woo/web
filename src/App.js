@@ -8,19 +8,17 @@ import Form from "./components/form";
 import Footer from "./components/footer";
 import NewSkills from "./components/skills_new";
 
-class App extends Component {
-  render() {
-    return (
-      <div>
-        <NavBar />
-        <Home />
-        <About />
-        <NewSkills />
-        <Contact />
-        <Footer />
-      </div>
-    );
-  }
-}
+const App = () => {
+  return (
+    <div>
+      <NavBar />
+      <Home />
+      <About />
+      <NewSkills />
+      <Contact />
+      <Footer />
+    </div>
+  );
+};
 
 export default App;

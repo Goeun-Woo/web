@@ -17,7 +17,6 @@ class Contact extends Component {
   };
 
   render() {
-    console.log(this.state);
     const { name, email, message } = this.state;
     const { handleChange } = this;
     return (
