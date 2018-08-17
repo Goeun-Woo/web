@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import "./about.css";
 import "../img/about_stars.png";
 import "../img/about_twinkling.png";

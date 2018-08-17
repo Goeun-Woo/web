@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 
 const Form = ({ name, email, message, onChange }) => {
   return (

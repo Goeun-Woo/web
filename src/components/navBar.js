@@ -1,9 +1,11 @@
-import React, { Component } from "react";
+import React from "react";
 import "./navBar.css";
 
 const NavBar = () => {
   return (
     <nav>
+      <label htmlFor="toggle">☰</label>
+      <input type="checkbox" id="toggle" />
       <ul>
         <a href="#HOME" className="active">
           HOME

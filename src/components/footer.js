@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import GitLogo from "../img/Github.png";
 import "./footer.css";
 

@@ -11,6 +11,17 @@ $(document).ready(function() {
     $("nav ul a").removeClass("active");
     $(this).addClass("active");
   });
+
+  //Function 1-3. mobile nav menu disappear on click
+  $("input").click(function(){
+    var mobileNav = $("input[id='toggle']").is(":checked");
+    if(mobileNav){
+    $('.mobile ul').click(function(){
+      $('#toggle').attr('checked', false);
+    });
+    }
+  })
+  
 });
 
 //Function 2-1 . Navigation Bar Shrink When Scroll Down from Top
@@ -32,3 +43,17 @@ $(window).scroll(function() {
     }
   });
 });
+
+$(window).resize(function()
+{
+  var width = window.innerWidth;
+   if(width <= 500){
+  $("nav").addClass("mobile");
+   }
+ else{
+ $("nav").removeClass("mobile");
+ }
+}).resize();
+
+
+

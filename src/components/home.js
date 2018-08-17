@@ -1,6 +1,5 @@
-import React, { Component } from "react";
+import React from "react";
 import "./home.css";
-import bg from "../bg.jpg";
 
 const Home = () => {
       return (
