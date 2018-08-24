@@ -119,7 +119,6 @@
 }
 
 #ABOUT {
-  clear: both;
   background: #000 url(../img/about_stars.png) repeat top center;
   z-index: 0;
   text-align: center;
@@ -150,7 +149,7 @@
 
 .colorfulTitle h1 {
   color: #000;
-  font-size: 5.5rem;
+  font-size: 8rem;
   text-align: center;
   padding: 0 3px 40px;
   /* bottom padding should be higher to make up for pseudo border height */
