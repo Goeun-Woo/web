@@ -8,6 +8,7 @@
 ----
 
 #### 01 사용한 기술
+- REACT
 - HTML 5
 - CSS 3
 - JQUERY
