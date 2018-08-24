@@ -119,6 +119,7 @@
 }
 
 #ABOUT {
+  clear: both;
   background: #000 url(../img/about_stars.png) repeat top center;
   z-index: 0;
   text-align: center;
