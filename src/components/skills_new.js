@@ -32,7 +32,7 @@ const NewSkills = () => {
   return (
     <section id="SKILLS" className="NavTarget">
       <h1>SKILLS</h1>
-      <h2 />
+    <article>
       <div className="education">
         <h2>Education</h2>
         <br />
@@ -60,6 +60,7 @@ const NewSkills = () => {
           );
         })}
       </div>
+    </article>
     </section>
   );
 };

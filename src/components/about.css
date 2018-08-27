@@ -38,83 +38,79 @@
   }
 }
 
-@keyframes masked-animation {
+@-ms-keyframes masked{
   0% {
     background-position: 0 0;
   }
 
   100% {
-    background-position: -8000px -3000px;
+    background-position: -10000px -5000px;
   }
 }
 
-@-webkit-keyframes masked-animation {
+@-moz-keyframes masked{
   0% {
     background-position: 0 0;
   }
 
   100% {
-    background-position: -8000px -3000px;
+    background-position: -10000px -5000px;
   }
 }
 
-@keyframes top-down {
+@keyframes masked {
   0% {
-    top: 0;
-    opacity: 0;
+    background-position: 0 0;
   }
 
   100% {
-    top: 10%;
-    opacity: 1;
+    background-position: -10000px -5000px;
   }
 }
 
-@-webkit-keyframes top-down {
+@-webkit-keyframes masked {
   0% {
-    top: 0;
-    opacity: 0;
+    background-position: 0 0;
   }
 
   100% {
-    top: 10%;
-    opacity: 1;
+    background-position: -10000px -5000px;
   }
 }
 
 @-webkit-keyframes fadeInDown {
   from {
     opacity: 0;
-    -webkit-transform: translatey(-50px);
+    -webkit-transform: translatey(0px);
   }
 
   to {
     opacity: 1;
-    -webkit-transform: translatey(0px);
+    -webkit-transform: translatey(100px);
   }
 }
 
 @-moz-keyframes fadeInDown {
   from {
     opacity: 0;
-    -moz-transform: translatey(-50px);
+    -moz-transform: translatey(0px);
   }
 
   to {
     opacity: 1;
-    -moz-transform: translatey(0px);
+    -moz-transform: translatey(100px);
   }
 }
 
 @keyframes fadeInDown {
   from {
     opacity: 0;
-    transform: translatey(-50px);
+    transform: translatey(0px);
   }
 
   to {
     opacity: 1;
-    transform: translatey(0px);
+    transform: translatey(100px);
   }
 }
 
@@ -140,18 +136,10 @@
 
 .colorfulTitle {
   background: url(../img/about_stars.png);
-  animation-name: top-down;
-  animation-duration: 4s;
-  -webkit-animation-name: top-down;
-  -webkit-animation-duration: 1.5s;
-  padding-top: 10%;
 }
-
-.colorfulTitle h1 {
-  color: #000;
+.go .colorfulTitle h1 {
   font-size: 8rem;
   text-align: center;
-  padding: 0 3px 40px;
   /* bottom padding should be higher to make up for pseudo border height */
   background: -webkit-linear-gradient(
       left,
@@ -168,31 +156,10 @@
   -webkit-text-fill-color: transparent;
   -ms-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
-  animation-name: masked-animation;
-  -webkit-animation-name: masked-animation;
-  animation-duration: 50s;
-  -webkit-animation-duration: 50s;
-  animation-iteration-count: infinite;
-  -webkit-animation-iteration-count: infinite;
-  animation-timing-function: linear;
-  -webkit-animation-timing-function: linear;
-  opacity: 0;
-}
-.go .colorfulTitle h1 {
-  -webkit-animation-name: fadeInDown;
-  -moz-animation-name: fadeInDown;
-  -o-animation-name: fadeInDown;
-  animation-name: fadeInDown;
-  -webkit-animation-fill-mode: both;
-  -moz-animation-fill-mode: both;
-  -o-animation-fill-mode: both;
-  animation-fill-mode: both;
-  -webkit-animation-duration: 2s;
-  -moz-animation-duration: 2s;
-  -o-animation-duration: 2s;
-  animation-duration: 2s;
-  animation-iteration-count: 1;
-  -webkit-animation-iteration-count: 1;
+  animation: masked 10s linear infinite, fadeInDown 1.5s both 1;
+  -webkit-animation: masked 10s linear infinite, fadeInDown 1.5s both 1;
+  -moz-animation: masked 10s linear infinite, fadeInDown 1.5s both 1;
+  -o-animation: masked 10s linear infinite, fadeInDown 1.5s both 1;
   opacity: 1;
 }
 .intro {
@@ -201,6 +168,7 @@
   font-size: 1.5rem;
   color: #cac1c1;
   width: 80%;
+  margin-top: 10%;
   padding: 10% 10%;
 }
 /* Responsive Device Resolution : tablet */

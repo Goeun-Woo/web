@@ -1,3 +1,40 @@
+
+@-webkit-keyframes fadeUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translatey(50px);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translatey(0px);
+  }
+}
+
+@-moz-keyframes fadeUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translatey(50px);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translatey(0px);
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translatey(50px);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translatey(0px);
+  }
+}
+
 #SKILLS {
   background: linear-gradient(#000, #0b1419, #172832);
   text-align: center;
@@ -25,21 +62,31 @@
   background-position: 0 100%;
   background-repeat: no-repeat;
 }
+
 #SKILLS h2 {
   text-align: center;
-  font-size: 3rem;
+  font-size: 3.5rem;
   color: rgb(185, 139, 206);
+  opacity:0;
+
 }
 #SKILLS p:first-of-type {
-  font-size: 1.3rem;
+  font-size: 2rem;
   color: white;
+  opacity:0;
+
+
 }
+#SKILLS p:nth-of-type(2) {
+  font-size: 1.3rem;
+  opacity:0;
+}
+
 .education,
 .skill {
   color: rgb(197, 188, 188);
   margin-top: 3%;
   width: 40%;
-  font-size: 1.2rem;
 }
 .education {
   text-align: right;
@@ -51,6 +98,27 @@
   float: right;
   margin-right: 7%;
 }
+
+.go .education h2, .go .skill h2, .go .education p:first-of-type, .go .skill p:first-of-type,   .go .education p:nth-of-type(2), .go .skill p:nth-of-type(2) {
+-webkit-animation: fadeUp 2s both;
+-moz-animation: fadeUp 2s both;
+-o-animation: fadeUp 2s both;
+animation: fadeUp 2s both;
+animation-delay: .2s;
+animation-iteration-count: 1;
+-webkit-animation-iteration-count: 1;
+opacity:1;
+}
+
+
+.go .education p:first-of-type, .go .skill p:first-of-type{
+  animation-delay: .5s;
+  }
+  
+  .go .education p:nth-of-type(2), .go .skill p:nth-of-type(2){
+  animation-delay: .8s;
+  }
+    
 /* Responsive Styling : PC */
 @media only screen and (max-width: 992px) {
   #SKILLS h2 {
